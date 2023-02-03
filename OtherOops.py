@@ -1,7 +1,7 @@
 #This is a program of oops concept and it is for Wappnet System
 
 from abc import ABC, abstractmethod
-
+import constant
 #Public Class
 #Base Class
 class person(ABC):
@@ -119,8 +119,8 @@ def main():
 
     return Jadu
 
-print('''
- ***** Hello user This is a Wappnet Salary counting system. ****
+print(f'''
+ ***** Hello user This is a {constant.COMPANY_NAME} Salary counting system. ****
         For Knowing your salary enter the below data
 ''')
 
@@ -141,3 +141,5 @@ for i in range(Persons):
 
 #Count for How many user check the confidential data.
 print(f"\nTotal persons till date checked is {person.PCount}\n")
+print(f"For any query send mail to {constant.SUPPORT_EMAIL}")
+print(f"Project name is {constant.PROJECT_NAME}")
